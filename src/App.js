@@ -23,9 +23,9 @@ export default function App() {
         }
     }
 
-    const changePositivity = () => {
+    const backspace = () => {
         
-        setResult(-Math.abs(result).toString())
+        setResult(result.slice(0, result.length-1))
     
     }
 
@@ -37,7 +37,7 @@ export default function App() {
            
             <div className='keypad'>
                 <button onClick={clear} id="clear" className='lightGray'>AC</button>
-                <button onClick={changePositivity} id="positive/negative" className='lightGray'>+/-</button>
+                <button onClick={backspace} id="backspace" className='lightGray'>C</button>
                 <button name="%" onClick={handleClick} className='lightGray'>%</button>
                 <button name="/" onClick={handleClick} className='orange'>&divide;</button>
                 <button name="7" onClick={handleClick}>7</button>
