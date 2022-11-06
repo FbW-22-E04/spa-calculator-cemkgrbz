@@ -33,7 +33,7 @@ export default function App() {
     return (
         <div className='container'>
             
-            <input type="text" value={result}  />
+            <input type="text" value={result} readOnly={true} />
            
             <div className='keypad'>
                 <button onClick={clear} id="clear" className='lightGray'>AC</button>
